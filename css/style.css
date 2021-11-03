@@ -76,14 +76,14 @@ nav a:hover{
 }
 
 
- .education
+ .education 
 {
     height: 50vh;
     padding-left: 20%;
     padding-top: 3%;
     display: flex;
 }
-.education h1,.skills h1{
+.education h1,.skills h1 , .projects h1{
     font-size: 3em;
     padding-bottom: 0.5em;
 }
@@ -96,6 +96,10 @@ nav a:hover{
 {
     padding-left: 20%;
     padding-top: 3%;
+}
+
+.projects{
+    padding: 3% 20% 3% 20%;
 }
 .row1,.row2,.row3{
     padding-bottom: 2em;
@@ -169,3 +173,42 @@ footer
     background-color:#204766;
     width:100%;
 }
+
+
+.scroll-img{
+    height: 80%;
+    width: 250px;
+    border-radius: 200px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.scroll-img:hover{
+    background-color: rgba(42, 165, 138, 0.747);
+    cursor: pointer;
+}
+
+
+.scrollbar{
+    display: flex;
+    flex-direction: row;
+    
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    justify-content: center;
+}
+
+.tabs{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    margin: 5%;
+}
+

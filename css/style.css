@@ -1,16 +1,6 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.navbar
-{
-    background-color:#1f2428;
-    height: 50px;
-    display: flex;
-    position: sticky;
-    top: 0;
 
-}
+
+
 .nav-element{
     display:flex;
     width: 100%;
@@ -33,7 +23,7 @@ nav a:hover{
     text-align: center;
     background-color: #1f2428;
     color: antiquewhite;
-    height: 60vh;
+    height: max-content;
 }
 .intro h1{
     font-size: 2.5rem;
@@ -76,13 +66,7 @@ nav a:hover{
 }
 
 
- .education 
-{
-    height: 50vh;
-    padding-left: 20%;
-    padding-top: 3%;
-    display: flex;
-}
+
 .education h1,.skills h1 , .projects h1{
     font-size: 3em;
     padding-bottom: 0.5em;
@@ -92,25 +76,15 @@ nav a:hover{
     padding: 0.7em 0 0 0;
 }
 
-.skills
-{
-    padding-left: 20%;
-    padding-top: 3%;
+
+
+
+
+.skill-image{
+    height: 100px;
+    width: 100px;
 }
 
-.projects{
-    padding: 3% 20% 3% 20%;
-}
-.row1,.row2,.row3{
-    padding-bottom: 2em;
-    display: flex;
-    margin-right: 10em;
-}
-.skills_name
-{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:1.5em;
-}
 .row1 img,.row2 img,.row3 img
 {
     height: 70px;
@@ -130,84 +104,46 @@ footer h4{
     text-align: center;
     color:antiquewhite;
 }
-.form
-{
-    color: antiquewhite;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    height: 42vh;
-    padding-top:2em ;
-}
-.form-name,.form-email,.form-message{
-    padding-bottom: 1.5em;
-}
-.form-text{
-    font-size: 1.2em;
-}
-.form-name input,.form-email input{
-    height: 100%;
-    width: 30%;
-    text-align: center;
-}
-textarea{
-    height: 90%;
-    width: 28.5%;
-}
-.button{
-    height:2em;
-    width: 5em;
+
+
+
+
+form{
     margin: auto;
-    text-align: center;
-    justify-content: center;
-    border-radius: 1em;
-    background-color:aqua;
-    border: 2px;
-    font-weight:bolder;
+    width: 40%;
 }
+
 .button:hover{
     cursor: pointer;
+}
+
+.skill-image{
+    padding: 10px;
+}
+.project{
+    margin: 5%;
+}
+.image{
+    border: 2px solid black ;
+    height: 30%;
+    width: 30%;
 }
 footer
 {
     background-color:#204766;
-    width:100%;
+
+    height: fit-content;
 }
 
 
-.scroll-img{
-    height: 80%;
-    width: 250px;
-    border-radius: 200px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+
+
+
+
+
+
+
     
-}
-
-.scroll-img:hover{
-    background-color: rgba(42, 165, 138, 0.747);
-    cursor: pointer;
-}
-
-
-.scrollbar{
-    display: flex;
-    flex-direction: row;
-    
-    width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
-    justify-content: center;
-}
-
-.tabs{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    justify-content: space-between;
-    align-items: center;
-}
 .btn{
     margin: 5%;
 }

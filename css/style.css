@@ -1,21 +1,6 @@
 
-
-
-.nav-element{
-    display:flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    font-size:larger;
-}
-nav a:hover{
-    color: grey;
-}
-.nav-link
-{
-    color: aliceblue;
-    text-decoration: none;
-    padding: 20px 20px;
+.navbar{
+    max-width: 100%;
 }
 .about
 {
@@ -27,7 +12,6 @@ nav a:hover{
 }
 .intro h1{
     font-size: 2.5rem;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     padding: 0.2em 0 0.1em 0;
 }
@@ -67,9 +51,10 @@ nav a:hover{
 
 
 
-.education h1,.skills h1 , .projects h1{
+h1{
     font-size: 3em;
-    padding-bottom: 0.5em;
+    text-align: center;
+    padding: 30px;
 }
 .hs h4, .college h4, footer h4{
     font-size: 1.5em;
@@ -85,20 +70,8 @@ nav a:hover{
     width: 100px;
 }
 
-.row1 img,.row2 img,.row3 img
-{
-    height: 70px;
-    width: 70px;
-}
-.row1-col{
-    padding-left: 10em;
-}
-.row2-col{
-    padding-left: 7em;
-}
-.row3-col{
-    padding-left: 11em;
-}
+
+
 footer h4{
     font-size: 2em;
     text-align: center;
@@ -120,6 +93,7 @@ form{
 .skill-image{
     padding: 10px;
 }
+
 .project{
     margin: 5%;
 }
@@ -130,7 +104,7 @@ form{
 }
 footer
 {
-    background-color:#204766;
+    background-color:coral;
 
     height: fit-content;
 }
@@ -146,5 +120,35 @@ footer
     
 .btn{
     margin: 5%;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 721px){
+    .intro h1{
+        font-size: 2em;
+    }
+    .intro p{
+        font-size:1em;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+@media only screen and (max-width: 520px){
+    .row1,.row2,.row3{
+        padding: 0;
+        flex-direction: column;
+    }
+    .row1-col,.row2-col,.row3-col{
+        padding:0;
+    }
+    .skills_name{
+        padding-left: 20%;
+    }
 }
 
